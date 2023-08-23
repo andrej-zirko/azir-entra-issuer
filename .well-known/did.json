@@ -1,48 +1,48 @@
 {
-  "id": "did:web:azir-issuer.zirko.eu",
-  "@context": [
-    "https://www.w3.org/ns/did/v1",
-    {
-      "@base": "did:web:azir-issuer.zirko.eu"
-    }
-  ],
-  "service": [
-    {
-      "id": "#linkeddomains",
-      "type": "LinkedDomains",
-      "serviceEndpoint": {
-        "origins": [
-          "https://azir-issuer.zirko.eu/"
-        ]
-      }
-    },
-    {
-      "id": "#hub",
-      "type": "IdentityHub",
-      "serviceEndpoint": {
-        "instances": [
-          "https://hub.did.msidentity.com/v1.0/7a71945d-a12f-415d-b1d8-90985dbb1829"
-        ]
-      }
-    }
-  ],
-  "verificationMethod": [
-    {
-      "id": "#6e1c03a4fbec4576ab1bd47cf6af6693vcSigningKey-ef8b2",
-      "controller": "did:web:azir-issuer.zirko.eu",
-      "type": "EcdsaSecp256k1VerificationKey2019",
-      "publicKeyJwk": {
-        "crv": "secp256k1",
-        "kty": "EC",
-        "x": "Ib1h6ew5J33NAwSJZxNSvXZ9Wdip42JF6vWxX1Mc4pw",
-        "y": "r9X9iaIoVWZYIailk2TXA9ev865F_ZEol_mle2NftMQ"
-      }
-    }
-  ],
-  "authentication": [
-    "#6e1c03a4fbec4576ab1bd47cf6af6693vcSigningKey-ef8b2"
-  ],
-  "assertionMethod": [
-    "#6e1c03a4fbec4576ab1bd47cf6af6693vcSigningKey-ef8b2"
-  ]
+    "id": "did:web:azir-entra-issuer.pages.dev",
+    "@context": [
+        "https://www.w3.org/ns/did/v1",
+        {
+            "@base": "did:web:azir-entra-issuer.pages.dev"
+        }
+    ],
+    "service": [
+        {
+            "id": "#linkeddomains",
+            "type": "LinkedDomains",
+            "serviceEndpoint": {
+                "origins": [
+                    "https://azir-entra-issuer.pages.dev/"
+                ]
+            }
+        },
+        {
+            "id": "#hub",
+            "type": "IdentityHub",
+            "serviceEndpoint": {
+                "instances": [
+                    "https://hub.did.msidentity.com/v1.0/7a71945d-a12f-415d-b1d8-90985dbb1829"
+                ]
+            }
+        }
+    ],
+    "verificationMethod": [
+        {
+            "id": "#3da4316415b048d88988c8e1cbbe8a85vcSigningKey-34650",
+            "controller": "did:web:azir-entra-issuer.pages.dev",
+            "type": "EcdsaSecp256k1VerificationKey2019",
+            "publicKeyJwk": {
+                "crv": "secp256k1",
+                "kty": "EC",
+                "x": "vR6tbBdYI4ojR-kKSDHUqglWQpouBqPivP1dDZVPsXw",
+                "y": "p7AqQKEaORQj1SzWiwEqfs9ewFPY2c8HYHm1CGa0810"
+            }
+        }
+    ],
+    "authentication": [
+        "#3da4316415b048d88988c8e1cbbe8a85vcSigningKey-34650"
+    ],
+    "assertionMethod": [
+        "#3da4316415b048d88988c8e1cbbe8a85vcSigningKey-34650"
+    ]
 }
